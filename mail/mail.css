@@ -1,0 +1,115 @@
+/* Alap stílusok */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url('back.jpg') no-repeat center center fixed; /* Háttérkép beállítása */
+    background-size: cover; /* A háttérkép kitöltése */
+    color: rgb(0, 0, 0); /* Az egész oldalon a szöveg színe fehér lesz */
+}
+
+/* Form konténer */
+.form-container {
+    background-color: rgba(114, 108, 108, 0.2); /* Átlátszó háttér */
+    padding: 40px; /* A belső tér növelése */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Finom árnyék */
+    width: 100%;
+    max-width: 700px; /* Az űrlap maximális szélességét növeltem */
+    min-width: 400px; /* A minimális szélesség beállítása a kisebb képernyőkre */
+}
+
+/* Cím */
+p {
+    text-align: center;
+    color: #fff7f7; /* A cím színét világosabb fehérre állítva */
+    text-shadow: 6px 5px 8px rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
+
+}
+
+/* Form mezők */
+label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255); /* A form mezők címkéje fehér lesz */
+    text-shadow: 2px 5px 8px rgb(0, 0, 0);
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px; /* A mezők belső margójának növelése */
+    margin-bottom: 16px;
+    border: 2px solid #ddd; /* Világos szegély */
+    border-radius: 4px;
+    font-size: 16px;
+    color: rgb(0, 0, 0); /* A form mezők szövege fehér */
+    background-color: rgba(223, 210, 210, 0.589); /* Világos háttér, hogy ne legyen annyira szürke */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* Kiemelés fókuszáláskor */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #eccd789f;
+    outline: none;
+}
+
+/* Gomb */
+button {
+    background-color: #e9a65a;
+    color: white; /* A gomb szövege fehér */
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #e0de4c;
+    color: rgb(0, 0, 0);
+}
+
+.fixed-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    z-index: 1000;
+}
+
+/* Opcionális stílusok a megjelenéshez */
+.fixed-sidebar .nav-link {
+    color: #fff;
+    background-color: #1a1a2e;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.fixed-sidebar .nav-link:hover {
+    background-color: #16213e;
+    color: #f8f9fa;
+}
+
+  
