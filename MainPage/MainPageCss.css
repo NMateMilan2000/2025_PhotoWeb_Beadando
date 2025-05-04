@@ -1,0 +1,154 @@
+/* Alapbeállítások */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Tartalom középre igazítása */
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+    flex: 1;
+}
+
+
+/* Tartalom elrendezése */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Felső igazítás a stabilitásért */
+    justify-content: center;
+    gap: 2vw;
+    padding: 2vw;
+    
+}
+
+.intro {
+    flex: 1;
+    text-align: center;
+    font-size: 2vw;
+    max-width: 40vw;
+    color: rgb(235, 226, 226);
+    border-radius: 15px;
+    padding: 1.5vw;
+    margin-top: 4vh; /* Ezzel a szöveg lejjebb kerül */
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(24, 17, 17, 0.671);
+    margin-left: 80px;
+}
+
+/* Slideshow */
+.slideshow-container {
+    flex: 1;
+    position: relative;
+    margin-top: 40px;
+    max-width: 25vw;
+    min-height: 20vw;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto; /* A slide magassága a képtől függ */
+}
+
+.slide img {
+    width: 100%;
+    height: auto; /* A kép eredeti arányát megtartja */
+    object-fit: contain; /* A kép teljes egészében látható, torzítás nélkül */
+    border-radius: 5px;
+}
+
+/* Aktív kép láthatóság */
+.slide.active {
+    display: block;
+}
+
+
+
+/* Lábléc a háttérkép alján */
+footer {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Lábléc linkek */
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+footer a:hover {
+    color: rgb(63, 150, 250);
+    text-shadow: 2px 4px 8px rgb(160, 51, 51);
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}   
+
+footer ul li {
+    display: inline;
+    margin: 0 8px;
+}
+
+.container {
+    margin-top: 70px;
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+
+/* Egyedi háttérszín a navbarhoz */
+.navbar {
+    background-color: #1a1a2e !important; /* sötétkék árnyalat */
+  }
+  
+  /* Navbar márkaneve (Navbar) */
+  .navbar-brand {
+    color: #f8f9fa !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Menüelemek stílusa */
+  .nav-link {
+    color: #dcdcdc !important;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  /* Aktív vagy egér fölé vitt menüpont */
+  .nav-link.active,
+  .nav-link:hover {
+    color: #ffffff !important;
+    background-color: #16213e;
+    border-radius: 5px;
+  }
+
+  
+  /* Hamburger ikon igazítása (opcionális) */
+  .navbar-toggler {
+    border-color: #ffffff;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
