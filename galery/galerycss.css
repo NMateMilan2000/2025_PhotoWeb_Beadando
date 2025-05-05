@@ -1,0 +1,73 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 8 oszlop */
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  }
+
+
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr); /* Mobilon 3 oszlop */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr); /* Nagyon kis képernyőn */
+    }
+  }
+
+  /* Egyedi háttérszín a navbarhoz */
+.navbar {
+  background-color: #1a1a2e !important; /* sötétkék árnyalat */
+}
+
+/* Navbar márkaneve (Navbar) */
+.navbar-brand {
+  color: #f8f9fa !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Menüelemek stílusa */
+.nav-link {
+  color: #dcdcdc !important;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Aktív vagy egér fölé vitt menüpont */
+.nav-link.active,
+.nav-link:hover {
+  color: #ffffff !important;
+  background-color: #16213e;
+  border-radius: 5px;
+}
+
+
+/* Hamburger ikon igazítása (opcionális) */
+.navbar-toggler {
+  border-color: #ffffff;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
