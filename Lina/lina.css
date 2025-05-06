@@ -1,0 +1,48 @@
+/* Alap beállítások a body számára */
+body {
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    color: #fff; /
+}
+
+/* A galéria rács elrendezése */
+.gallery {
+    display: flex;
+    justify-content: center; /* A tartalom középre igazítása */
+    padding: 20px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 oszlop */
+    grid-template-rows: repeat(3, 1fr);    /* 3 sor */
+    gap: 25px; 
+    width: 100%; /* A konténer teljes szélessége */
+    max-width: 1650px; /* Maximum szélesség (opcionális) */
+    margin: 0 auto; /* A konténer középre igazítása */
+}
+
+.images img {
+    width: 100%;  /* A képek szélessége 100% a konténerükön belül */
+    height: 100%; /* A képek magassága is 100%, hogy mindegyik ugyanakkora legyen */
+    object-fit: cover; /* Kép kitöltése, miközben megtartja az arányait */
+    border-radius: 5px; /* A képek lekerekített sarkai */
+    transition: transform 0.3s ease; /* Finom átmenet, ha animálni szeretnéd */
+}
+
+/* Reszponzivitás - kisebb képernyőkön */
+@media (max-width: 768px) {
+    .images {
+        grid-template-columns: repeat(2, 1fr); /* 2 oszlop kisebb képernyőkön */
+    }
+}
+
+@media (max-width: 480px) {
+    .images {
+        grid-template-columns: 1fr; /* 1 oszlop még kisebb képernyőkön */
+    }
+}
